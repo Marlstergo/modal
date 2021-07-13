@@ -20,7 +20,7 @@ const Modal = ({ closeModal, isOpen }) => (
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-gray-400 opacity-20" />
+            <Dialog.Overlay className="fixed inset-0" />
           </Transition.Child>
 
           {/* This element is to trick the browser into centering the modal contents. */}
@@ -39,7 +39,7 @@ const Modal = ({ closeModal, isOpen }) => (
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <div className="inline-block w-full max-w-lg py-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+            <div className="inline-block w-full bg-gray-200 max-w-lg py-6 my-8 overflow-hidden text-left align-middle transition-all transform  shadow-xl rounded-2xl">
               <div className="w-full px-6 flex justify-between">
                 <Dialog.Title
                   as="h3"
